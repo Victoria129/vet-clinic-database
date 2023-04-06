@@ -18,7 +18,7 @@ ROLLBACK;
 SELECT * FROM animals;
 BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
-UPDATE animals SET species = 'pokemon' WHERE species = '';
+UPDATE animals SET species = 'pokemon' WHERE species = 'unspecified';
 COMMIT;
 SELECT * FROM animals;
 BEGIN;
